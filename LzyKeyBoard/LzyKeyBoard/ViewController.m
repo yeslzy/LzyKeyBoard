@@ -12,17 +12,21 @@
 @interface ViewController ()<UITextFieldDelegate,LzyCarIdKeyBoardDelegate>
 @property(nonatomic,strong) LzyCarIdKeyBoardView*carKeyboardView;
 @property(nonatomic,strong) LzyNumberKeyBoardView *numberKeyboardView;
-
+@property(nonatomic,assign) BOOL flag;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.textField addTarget:self action:@selector(textFieldTextChange:) forControlEvents:UIControlEventEditingChanged];
    //如何使用自定义键盘
    //self.textField.inputView = self.carKeyboardView;
-    self.textField.inputView = self.numberKeyboardView;
+   self.textField.inputView = self.numberKeyboardView;
+   self.flag = YES;
+    
+   if (self.flag) {
+       [self.textField addTarget:self action:@selector(textFieldTextChange:) forControlEvents:UIControlEventEditingChanged];
+    }
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [self.view endEditing:YES];

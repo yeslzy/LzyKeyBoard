@@ -19,6 +19,8 @@
 		486FB745221CEB1900690965 /* LzyNumberKeyBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 486FB744221CEB1900690965 /* LzyNumberKeyBoardView.m */; };
 		486FB748221D04F400690965 /* keyboard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 486FB746221D04F300690965 /* keyboard@2x.png */; };
 		486FB749221D04F400690965 /* keyboard@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 486FB747221D04F300690965 /* keyboard@3x.png */; };
+		486FB74C221D2CE700690965 /* carNum.gif in Resources */ = {isa = PBXBuildFile; fileRef = 486FB74A221D2CE700690965 /* carNum.gif */; };
+		486FB74D221D2CE700690965 /* safeNum.gif in Resources */ = {isa = PBXBuildFile; fileRef = 486FB74B221D2CE700690965 /* safeNum.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		486FB744221CEB1900690965 /* LzyNumberKeyBoardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LzyNumberKeyBoardView.m; sourceTree = "<group>"; };
 		486FB746221D04F300690965 /* keyboard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard@2x.png"; sourceTree = "<group>"; };
 		486FB747221D04F300690965 /* keyboard@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard@3x.png"; sourceTree = "<group>"; };
+		486FB74A221D2CE700690965 /* carNum.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = carNum.gif; sourceTree = "<group>"; };
+		486FB74B221D2CE700690965 /* safeNum.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = safeNum.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 				18F29F9C1D801AC900A609E3 /* Assets.xcassets */,
 				18F29F9E1D801AC900A609E3 /* LaunchScreen.storyboard */,
 				18F29FA11D801AC900A609E3 /* Info.plist */,
+				486FB74A221D2CE700690965 /* carNum.gif */,
+				486FB74B221D2CE700690965 /* safeNum.gif */,
 				18F29F901D801AC900A609E3 /* Supporting Files */,
 			);
 			path = LzyKeyBoard;
@@ -172,9 +178,11 @@
 				18ECA5D31D814E0D002F1619 /* clear@2x.png in Resources */,
 				18ECA5D41D814E0D002F1619 /* clear@3x.png in Resources */,
 				18F29FA01D801AC900A609E3 /* LaunchScreen.storyboard in Resources */,
+				486FB74C221D2CE700690965 /* carNum.gif in Resources */,
 				486FB748221D04F400690965 /* keyboard@2x.png in Resources */,
 				18F29F9D1D801AC900A609E3 /* Assets.xcassets in Resources */,
 				18F29F9B1D801AC900A609E3 /* Main.storyboard in Resources */,
+				486FB74D221D2CE700690965 /* safeNum.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
