@@ -16,6 +16,9 @@
 		18F29F9B1D801AC900A609E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F29F991D801AC900A609E3 /* Main.storyboard */; };
 		18F29F9D1D801AC900A609E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F29F9C1D801AC900A609E3 /* Assets.xcassets */; };
 		18F29FA01D801AC900A609E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F29F9E1D801AC900A609E3 /* LaunchScreen.storyboard */; };
+		486FB745221CEB1900690965 /* LzyNumberKeyBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 486FB744221CEB1900690965 /* LzyNumberKeyBoardView.m */; };
+		486FB748221D04F400690965 /* keyboard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 486FB746221D04F300690965 /* keyboard@2x.png */; };
+		486FB749221D04F400690965 /* keyboard@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 486FB747221D04F300690965 /* keyboard@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,10 @@
 		18F29F9C1D801AC900A609E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18F29F9F1D801AC900A609E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18F29FA11D801AC900A609E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		486FB743221CEB1900690965 /* LzyNumberKeyBoardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LzyNumberKeyBoardView.h; sourceTree = "<group>"; };
+		486FB744221CEB1900690965 /* LzyNumberKeyBoardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LzyNumberKeyBoardView.m; sourceTree = "<group>"; };
+		486FB746221D04F300690965 /* keyboard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard@2x.png"; sourceTree = "<group>"; };
+		486FB747221D04F300690965 /* keyboard@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,11 +57,15 @@
 		18ECA5CD1D81403E002F1619 /* LzyKeyBoardView */ = {
 			isa = PBXGroup;
 			children = (
+				486FB746221D04F300690965 /* keyboard@2x.png */,
+				486FB747221D04F300690965 /* keyboard@3x.png */,
 				18ECA5D11D814E0D002F1619 /* clear@2x.png */,
 				18ECA5D21D814E0D002F1619 /* clear@3x.png */,
 				18ECA5D51D815330002F1619 /* Constant.h */,
 				18ECA5CE1D81411E002F1619 /* LzyCarIdKeyBoardView.h */,
 				18ECA5CF1D81411E002F1619 /* LzyCarIdKeyBoardView.m */,
+				486FB743221CEB1900690965 /* LzyNumberKeyBoardView.h */,
+				486FB744221CEB1900690965 /* LzyNumberKeyBoardView.m */,
 			);
 			path = LzyKeyBoardView;
 			sourceTree = "<group>";
@@ -157,9 +168,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				486FB749221D04F400690965 /* keyboard@3x.png in Resources */,
 				18ECA5D31D814E0D002F1619 /* clear@2x.png in Resources */,
 				18ECA5D41D814E0D002F1619 /* clear@3x.png in Resources */,
 				18F29FA01D801AC900A609E3 /* LaunchScreen.storyboard in Resources */,
+				486FB748221D04F400690965 /* keyboard@2x.png in Resources */,
 				18F29F9D1D801AC900A609E3 /* Assets.xcassets in Resources */,
 				18F29F9B1D801AC900A609E3 /* Main.storyboard in Resources */,
 			);
@@ -175,6 +188,7 @@
 				18F29F981D801AC900A609E3 /* ViewController.m in Sources */,
 				18F29F951D801AC900A609E3 /* AppDelegate.m in Sources */,
 				18F29F921D801AC900A609E3 /* main.m in Sources */,
+				486FB745221CEB1900690965 /* LzyNumberKeyBoardView.m in Sources */,
 				18ECA5D01D81411E002F1619 /* LzyCarIdKeyBoardView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -14,6 +14,9 @@
     if (self) {
         CGFloat width=(VIEW_WIDTH-7*3)/8;
         CGFloat height=3*5+width*4;
+        if(IS_IPHONE_X){
+            height += SAFE_AREA_BOTTOM_HEIGHT;
+        }
         self.frame=CGRectMake(0, 0, VIEW_WIDTH, height);
         self.backgroundColor=[UIColor blackColor];
         [self createChineseWordView];
@@ -50,9 +53,9 @@
     UIView*view=[[UIView alloc] initWithFrame:self.bounds];
     view.tag=120;
     [self addSubview:view];
-    
+    CGFloat theight = IS_IPHONE_X?(self.frame.size.height-SAFE_AREA_BOTTOM_HEIGHT):self.frame.size.height;
     CGFloat btn_width=(self.frame.size.width-(COUNT_OF_ROW_NUM_WORD+1)*WORD_HOR_GAP)/COUNT_OF_ROW_NUM_WORD;
-    CGFloat btn_height=(self.frame.size.height-5*WORD_HOR_GAP)/4;//总共4行
+    CGFloat btn_height=(theight-5*WORD_HOR_GAP)/4;//总共4行
     for (int i=0; i<[NUMBERS_WORD_ARRAY count]; i++) {
         CGRect frame=CGRectMake(i*btn_width+(i+1)*WORD_HOR_GAP, WORD_HOR_GAP, btn_width, btn_height);
         NSString*word=[NUMBERS_WORD_ARRAY objectAtIndex:i];

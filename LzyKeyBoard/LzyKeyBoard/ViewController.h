@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LzyCarIdKeyBoardView.h"
-@interface ViewController : UIViewController<UITextFieldDelegate,LzyCarIdKeyBoardDelegate>
+@interface ViewController : UIViewController
 @property(nonatomic,weak)IBOutlet UITextField*textField;
 @end
 

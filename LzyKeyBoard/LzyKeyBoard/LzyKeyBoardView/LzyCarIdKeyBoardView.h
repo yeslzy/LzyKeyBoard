@@ -8,11 +8,7 @@
 
 
 #import "Constant.h"
-@protocol LzyCarIdKeyBoardDelegate<NSObject>
--(void)checkOneBtnClick:(NSString*)word;
--(void)clearBtnClick;
--(void)doneBtnClick;
-@end
+
 
 @interface LzyCarIdKeyBoardView : UIView
 @property(nonatomic,assign)id<LzyCarIdKeyBoardDelegate>delegate;
