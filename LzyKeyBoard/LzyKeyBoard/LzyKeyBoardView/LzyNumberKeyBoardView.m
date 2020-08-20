@@ -84,19 +84,19 @@
         if (n == 0) {
             UILabel *horLineLabel = [UILabel new];
             [horLineLabel setFrame:CGRectMake(0,y, VIEW_WIDTH, 1)];
-            [horLineLabel setBackgroundColor:[self getColor:@"CDCDCD"]];
+            [horLineLabel setBackgroundColor:[UIColor colorWithHexString:@"#CDCDCD"]];
             [self.contentView addSubview:horLineLabel];
         }
     }
     for (int k=0; k<COUNT_OF_ROW_NUMBER_WORD; k++) {
         UILabel *verLineLabel = [UILabel new];
         [verLineLabel setFrame:CGRectMake(k*btn_width,0, 1, NUMBER_ROW_HEIGHT*4)];
-        [verLineLabel setBackgroundColor:[self getColor:@"CDCDCD"]];
+        [verLineLabel setBackgroundColor:[UIColor colorWithHexString:@"#CDCDCD"]];
         [self.contentView addSubview:verLineLabel];
     }
     UILabel *horLineLabel = [UILabel new];
     [horLineLabel setFrame:CGRectMake(0,NUMBER_ROW_HEIGHT*4, VIEW_WIDTH, 1)];
-    [horLineLabel setBackgroundColor:[self getColor:@"CDCDCD"]];
+    [horLineLabel setBackgroundColor:[UIColor colorWithHexString:@"#CDCDCD"]];
     [self.contentView addSubview:horLineLabel];
 }
 - (void)destoryNumberKeyboard{
@@ -127,27 +127,6 @@
         [self.delegate clearBtnClick];
     }
 }
-
--(UIColor*)getColor:(NSString*)hexColor{
-    UIColor *result = nil;
-    unsigned int colorCode = 0;
-    unsigned char redByte, greenByte, blueByte;
-    
-    if (nil != hexColor)
-    {
-        NSScanner *scanner = [NSScanner scannerWithString:hexColor];
-        (void) [scanner scanHexInt:&colorCode]; // ignore error
-    }
-    redByte = (unsigned char) (colorCode >> 16);
-    greenByte = (unsigned char) (colorCode >> 8);
-    blueByte = (unsigned char) (colorCode); // masks off high bits
-    result = [UIColor
-              colorWithRed: (float)redByte / 0xff
-              green: (float)greenByte/ 0xff
-              blue: (float)blueByte / 0xff
-              alpha:1.0];
-    return result;
-}
 #pragma mark lazy load
 - (UIView*)topView{
     if (!_topView) {
@@ -173,7 +152,7 @@
 - (UIButton*)doneBtn{
     if (!_doneBtn) {
         _doneBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_doneBtn setBackgroundColor:[self getColor:@"CDCDCD"]];
+        [_doneBtn setBackgroundColor:[UIColor colorWithHexString:@"#CDCDCD"]];
         [_doneBtn setImage:[UIImage imageNamed:@"keyboard"] forState:UIControlStateNormal];
         [_doneBtn addTarget:self action:@selector(closeKeyboardView) forControlEvents:UIControlEventTouchUpInside];
     }
@@ -182,7 +161,7 @@
 - (UIButton*)clearBtn{
     if (!_clearBtn) {
         _clearBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_clearBtn setBackgroundColor:[self getColor:@"CDCDCD"]];
+        [_clearBtn setBackgroundColor:[UIColor colorWithHexString:@"#CDCDCD"]];
         [_clearBtn setImage:[UIImage imageNamed:@"clear"] forState:UIControlStateNormal];
         [_clearBtn addTarget:self action:@selector(clearText) forControlEvents:UIControlEventTouchUpInside];
     }

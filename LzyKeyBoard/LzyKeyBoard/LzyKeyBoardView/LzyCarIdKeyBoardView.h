@@ -7,13 +7,12 @@
 //
 
 
-#import "Constant.h"
+#import "ConstUtil.h"
 
 
 @interface LzyCarIdKeyBoardView : UIView
-@property(nonatomic,assign)id<LzyCarIdKeyBoardDelegate>delegate;
+@property(nonatomic,weak) id<LzyKeyBoardDelegate> delegate;
 
 -(void)showChineseKeyBoard;
 -(void)showNumKeyBoard;
-+(BOOL)isValidateCarNoPrefix:(NSString*)carNo;
 @end

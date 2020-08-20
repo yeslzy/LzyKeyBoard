@@ -142,9 +142,5 @@
     [self showChineseKeyBoard];
 }
 //可以校验字符串是否是车牌号
-+(BOOL)isValidateCarNoPrefix:(NSString*)carNo{
-    NSString *carRegex = @"^[\u4e00-\u9fa5]{1}[a-zA-Z]{1}$";
-    NSPredicate *carTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",carRegex];
-    return [carTest evaluateWithObject:carNo];
-}
+
 @end

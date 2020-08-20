@@ -8,8 +8,9 @@
 #import "LzyCarIdKeyBoardView.h"
 #import "LzyNumberKeyBoardView.h"
 #import "ViewController.h"
+#import "ChatDemoViewController.h"
 
-@interface ViewController ()<UITextFieldDelegate,LzyCarIdKeyBoardDelegate>
+@interface ViewController ()<UITextFieldDelegate,LzyKeyBoardDelegate>
 @property(nonatomic,strong) LzyCarIdKeyBoardView*carKeyboardView;
 @property(nonatomic,strong) LzyNumberKeyBoardView *numberKeyboardView;
 @property(nonatomic,assign) BOOL flag;
@@ -20,8 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    //如何使用自定义键盘
-   //self.textField.inputView = self.carKeyboardView;
-   self.textField.inputView = self.numberKeyboardView;
+   self.textField.inputView = self.carKeyboardView;
+   //self.textField.inputView = self.numberKeyboardView;
    self.flag = YES;
     
    if (self.flag) {
@@ -60,6 +61,11 @@
     if (text.length==self.numberKeyboardView.maxWord) {
         [self.textField resignFirstResponder];
     }
+}
+#pragma mark 其他方法
+- (IBAction)gotoChatView:(id)sender{
+    ChatDemoViewController *vc = [ChatDemoViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 #pragma mark lazy load
 - (LzyCarIdKeyBoardView*)carKeyboardView{

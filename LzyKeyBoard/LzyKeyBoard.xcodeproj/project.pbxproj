@@ -7,44 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		029D9DB1E6EB9A25E123F19D /* libPods-LzyKeyBoard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09278109DDEE9227D17A9F52 /* libPods-LzyKeyBoard.a */; };
 		18ECA5D01D81411E002F1619 /* LzyCarIdKeyBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECA5CF1D81411E002F1619 /* LzyCarIdKeyBoardView.m */; };
-		18ECA5D31D814E0D002F1619 /* clear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18ECA5D11D814E0D002F1619 /* clear@2x.png */; };
-		18ECA5D41D814E0D002F1619 /* clear@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18ECA5D21D814E0D002F1619 /* clear@3x.png */; };
 		18F29F921D801AC900A609E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F29F911D801AC900A609E3 /* main.m */; };
 		18F29F951D801AC900A609E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F29F941D801AC900A609E3 /* AppDelegate.m */; };
 		18F29F981D801AC900A609E3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F29F971D801AC900A609E3 /* ViewController.m */; };
-		18F29F9B1D801AC900A609E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F29F991D801AC900A609E3 /* Main.storyboard */; };
-		18F29F9D1D801AC900A609E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F29F9C1D801AC900A609E3 /* Assets.xcassets */; };
-		18F29FA01D801AC900A609E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F29F9E1D801AC900A609E3 /* LaunchScreen.storyboard */; };
+		48604DE724ED0C600088E419 /* keyboard@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48604DDB24ED0C600088E419 /* keyboard@3x.png */; };
+		48604DE824ED0C600088E419 /* keyboard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48604DDC24ED0C600088E419 /* keyboard@2x.png */; };
+		48604DE924ED0C600088E419 /* safeNum.gif in Resources */ = {isa = PBXBuildFile; fileRef = 48604DDD24ED0C600088E419 /* safeNum.gif */; };
+		48604DEA24ED0C600088E419 /* carNum.gif in Resources */ = {isa = PBXBuildFile; fileRef = 48604DDE24ED0C600088E419 /* carNum.gif */; };
+		48604DEB24ED0C600088E419 /* clear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48604DDF24ED0C600088E419 /* clear@2x.png */; };
+		48604DEC24ED0C600088E419 /* clear@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48604DE024ED0C600088E419 /* clear@3x.png */; };
+		48604DED24ED0C600088E419 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48604DE124ED0C600088E419 /* Assets.xcassets */; };
+		48604DEE24ED0C600088E419 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48604DE224ED0C600088E419 /* LaunchScreen.storyboard */; };
+		48604DEF24ED0C600088E419 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48604DE424ED0C600088E419 /* Main.storyboard */; };
+		48604DF324ED0C8C0088E419 /* ConstUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 48604DF224ED0C8C0088E419 /* ConstUtil.m */; };
+		48604DFA24ED13270088E419 /* ChatDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48604DF924ED13270088E419 /* ChatDemoViewController.m */; };
+		48604DFD24ED14B20088E419 /* LzyTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48604DFC24ED14B20088E419 /* LzyTextView.m */; };
+		48604E0024ED14F20088E419 /* LzyInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48604DFF24ED14F20088E419 /* LzyInputView.m */; };
 		486FB745221CEB1900690965 /* LzyNumberKeyBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 486FB744221CEB1900690965 /* LzyNumberKeyBoardView.m */; };
-		486FB748221D04F400690965 /* keyboard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 486FB746221D04F300690965 /* keyboard@2x.png */; };
-		486FB749221D04F400690965 /* keyboard@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 486FB747221D04F300690965 /* keyboard@3x.png */; };
-		486FB74C221D2CE700690965 /* carNum.gif in Resources */ = {isa = PBXBuildFile; fileRef = 486FB74A221D2CE700690965 /* carNum.gif */; };
-		486FB74D221D2CE700690965 /* safeNum.gif in Resources */ = {isa = PBXBuildFile; fileRef = 486FB74B221D2CE700690965 /* safeNum.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09278109DDEE9227D17A9F52 /* libPods-LzyKeyBoard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LzyKeyBoard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18ECA5CE1D81411E002F1619 /* LzyCarIdKeyBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LzyCarIdKeyBoardView.h; sourceTree = "<group>"; };
 		18ECA5CF1D81411E002F1619 /* LzyCarIdKeyBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LzyCarIdKeyBoardView.m; sourceTree = "<group>"; };
-		18ECA5D11D814E0D002F1619 /* clear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clear@2x.png"; sourceTree = "<group>"; };
-		18ECA5D21D814E0D002F1619 /* clear@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clear@3x.png"; sourceTree = "<group>"; };
-		18ECA5D51D815330002F1619 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 		18F29F8D1D801AC900A609E3 /* LzyKeyBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LzyKeyBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F29F911D801AC900A609E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18F29F931D801AC900A609E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18F29F941D801AC900A609E3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		18F29F961D801AC900A609E3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		18F29F971D801AC900A609E3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		18F29F9A1D801AC900A609E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		18F29F9C1D801AC900A609E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		18F29F9F1D801AC900A609E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		18F29FA11D801AC900A609E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		417A6E5622C5392AF061E022 /* Pods-LzyKeyBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LzyKeyBoard.release.xcconfig"; path = "Target Support Files/Pods-LzyKeyBoard/Pods-LzyKeyBoard.release.xcconfig"; sourceTree = "<group>"; };
+		48604DDB24ED0C600088E419 /* keyboard@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard@3x.png"; sourceTree = "<group>"; };
+		48604DDC24ED0C600088E419 /* keyboard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard@2x.png"; sourceTree = "<group>"; };
+		48604DDD24ED0C600088E419 /* safeNum.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = safeNum.gif; sourceTree = "<group>"; };
+		48604DDE24ED0C600088E419 /* carNum.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = carNum.gif; sourceTree = "<group>"; };
+		48604DDF24ED0C600088E419 /* clear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clear@2x.png"; sourceTree = "<group>"; };
+		48604DE024ED0C600088E419 /* clear@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clear@3x.png"; sourceTree = "<group>"; };
+		48604DE124ED0C600088E419 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		48604DE324ED0C600088E419 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		48604DE524ED0C600088E419 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		48604DE624ED0C600088E419 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48604DF124ED0C8C0088E419 /* ConstUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstUtil.h; sourceTree = "<group>"; };
+		48604DF224ED0C8C0088E419 /* ConstUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConstUtil.m; sourceTree = "<group>"; };
+		48604DF824ED13270088E419 /* ChatDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatDemoViewController.h; sourceTree = "<group>"; };
+		48604DF924ED13270088E419 /* ChatDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatDemoViewController.m; sourceTree = "<group>"; };
+		48604DFB24ED14B20088E419 /* LzyTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LzyTextView.h; sourceTree = "<group>"; };
+		48604DFC24ED14B20088E419 /* LzyTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LzyTextView.m; sourceTree = "<group>"; };
+		48604DFE24ED14F20088E419 /* LzyInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LzyInputView.h; sourceTree = "<group>"; };
+		48604DFF24ED14F20088E419 /* LzyInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LzyInputView.m; sourceTree = "<group>"; };
 		486FB743221CEB1900690965 /* LzyNumberKeyBoardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LzyNumberKeyBoardView.h; sourceTree = "<group>"; };
 		486FB744221CEB1900690965 /* LzyNumberKeyBoardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LzyNumberKeyBoardView.m; sourceTree = "<group>"; };
-		486FB746221D04F300690965 /* keyboard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard@2x.png"; sourceTree = "<group>"; };
-		486FB747221D04F300690965 /* keyboard@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard@3x.png"; sourceTree = "<group>"; };
-		486FB74A221D2CE700690965 /* carNum.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = carNum.gif; sourceTree = "<group>"; };
-		486FB74B221D2CE700690965 /* safeNum.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = safeNum.gif; sourceTree = "<group>"; };
+		5FA925E7A81254FFE9C53C3D /* Pods-LzyKeyBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LzyKeyBoard.debug.xcconfig"; path = "Target Support Files/Pods-LzyKeyBoard/Pods-LzyKeyBoard.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				029D9DB1E6EB9A25E123F19D /* libPods-LzyKeyBoard.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,11 +77,6 @@
 		18ECA5CD1D81403E002F1619 /* LzyKeyBoardView */ = {
 			isa = PBXGroup;
 			children = (
-				486FB746221D04F300690965 /* keyboard@2x.png */,
-				486FB747221D04F300690965 /* keyboard@3x.png */,
-				18ECA5D11D814E0D002F1619 /* clear@2x.png */,
-				18ECA5D21D814E0D002F1619 /* clear@3x.png */,
-				18ECA5D51D815330002F1619 /* Constant.h */,
 				18ECA5CE1D81411E002F1619 /* LzyCarIdKeyBoardView.h */,
 				18ECA5CF1D81411E002F1619 /* LzyCarIdKeyBoardView.m */,
 				486FB743221CEB1900690965 /* LzyNumberKeyBoardView.h */,
@@ -79,6 +90,8 @@
 			children = (
 				18F29F8F1D801AC900A609E3 /* LzyKeyBoard */,
 				18F29F8E1D801AC900A609E3 /* Products */,
+				D00083FDD9F40A65A6ED7D7E /* Pods */,
+				4E9478E5F34CCFF166D37DF1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,17 +106,17 @@
 		18F29F8F1D801AC900A609E3 /* LzyKeyBoard */ = {
 			isa = PBXGroup;
 			children = (
+				48604DD924ED0C600088E419 /* Resources */,
+				48604DF424ED11290088E419 /* LzyChatView */,
 				18ECA5CD1D81403E002F1619 /* LzyKeyBoardView */,
 				18F29F931D801AC900A609E3 /* AppDelegate.h */,
 				18F29F941D801AC900A609E3 /* AppDelegate.m */,
 				18F29F961D801AC900A609E3 /* ViewController.h */,
 				18F29F971D801AC900A609E3 /* ViewController.m */,
-				18F29F991D801AC900A609E3 /* Main.storyboard */,
-				18F29F9C1D801AC900A609E3 /* Assets.xcassets */,
-				18F29F9E1D801AC900A609E3 /* LaunchScreen.storyboard */,
-				18F29FA11D801AC900A609E3 /* Info.plist */,
-				486FB74A221D2CE700690965 /* carNum.gif */,
-				486FB74B221D2CE700690965 /* safeNum.gif */,
+				48604DF824ED13270088E419 /* ChatDemoViewController.h */,
+				48604DF924ED13270088E419 /* ChatDemoViewController.m */,
+				48604DF124ED0C8C0088E419 /* ConstUtil.h */,
+				48604DF224ED0C8C0088E419 /* ConstUtil.m */,
 				18F29F901D801AC900A609E3 /* Supporting Files */,
 			);
 			path = LzyKeyBoard;
@@ -117,6 +130,59 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		48604DD924ED0C600088E419 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				48604DDA24ED0C600088E419 /* Images */,
+				48604DE124ED0C600088E419 /* Assets.xcassets */,
+				48604DE224ED0C600088E419 /* LaunchScreen.storyboard */,
+				48604DE424ED0C600088E419 /* Main.storyboard */,
+				48604DE624ED0C600088E419 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		48604DDA24ED0C600088E419 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				48604DDB24ED0C600088E419 /* keyboard@3x.png */,
+				48604DDC24ED0C600088E419 /* keyboard@2x.png */,
+				48604DDD24ED0C600088E419 /* safeNum.gif */,
+				48604DDE24ED0C600088E419 /* carNum.gif */,
+				48604DDF24ED0C600088E419 /* clear@2x.png */,
+				48604DE024ED0C600088E419 /* clear@3x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		48604DF424ED11290088E419 /* LzyChatView */ = {
+			isa = PBXGroup;
+			children = (
+				48604DFB24ED14B20088E419 /* LzyTextView.h */,
+				48604DFC24ED14B20088E419 /* LzyTextView.m */,
+				48604DFE24ED14F20088E419 /* LzyInputView.h */,
+				48604DFF24ED14F20088E419 /* LzyInputView.m */,
+			);
+			path = LzyChatView;
+			sourceTree = "<group>";
+		};
+		4E9478E5F34CCFF166D37DF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09278109DDEE9227D17A9F52 /* libPods-LzyKeyBoard.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D00083FDD9F40A65A6ED7D7E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5FA925E7A81254FFE9C53C3D /* Pods-LzyKeyBoard.debug.xcconfig */,
+				417A6E5622C5392AF061E022 /* Pods-LzyKeyBoard.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -124,6 +190,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18F29FA41D801AC900A609E3 /* Build configuration list for PBXNativeTarget "LzyKeyBoard" */;
 			buildPhases = (
+				A15AD224D713ADA10C002926 /* [CP] Check Pods Manifest.lock */,
 				18F29F891D801AC900A609E3 /* Sources */,
 				18F29F8A1D801AC900A609E3 /* Frameworks */,
 				18F29F8B1D801AC900A609E3 /* Resources */,
@@ -143,17 +210,19 @@
 		18F29F851D801AC900A609E3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = findsoft;
 				TargetAttributes = {
 					18F29F8C1D801AC900A609E3 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 8AA3L66GJ6;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = 18F29F881D801AC900A609E3 /* Build configuration list for PBXProject "LzyKeyBoard" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -174,19 +243,44 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				486FB749221D04F400690965 /* keyboard@3x.png in Resources */,
-				18ECA5D31D814E0D002F1619 /* clear@2x.png in Resources */,
-				18ECA5D41D814E0D002F1619 /* clear@3x.png in Resources */,
-				18F29FA01D801AC900A609E3 /* LaunchScreen.storyboard in Resources */,
-				486FB74C221D2CE700690965 /* carNum.gif in Resources */,
-				486FB748221D04F400690965 /* keyboard@2x.png in Resources */,
-				18F29F9D1D801AC900A609E3 /* Assets.xcassets in Resources */,
-				18F29F9B1D801AC900A609E3 /* Main.storyboard in Resources */,
-				486FB74D221D2CE700690965 /* safeNum.gif in Resources */,
+				48604DEB24ED0C600088E419 /* clear@2x.png in Resources */,
+				48604DE924ED0C600088E419 /* safeNum.gif in Resources */,
+				48604DE724ED0C600088E419 /* keyboard@3x.png in Resources */,
+				48604DEC24ED0C600088E419 /* clear@3x.png in Resources */,
+				48604DEE24ED0C600088E419 /* LaunchScreen.storyboard in Resources */,
+				48604DEA24ED0C600088E419 /* carNum.gif in Resources */,
+				48604DE824ED0C600088E419 /* keyboard@2x.png in Resources */,
+				48604DEF24ED0C600088E419 /* Main.storyboard in Resources */,
+				48604DED24ED0C600088E419 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A15AD224D713ADA10C002926 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LzyKeyBoard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		18F29F891D801AC900A609E3 /* Sources */ = {
@@ -197,27 +291,31 @@
 				18F29F951D801AC900A609E3 /* AppDelegate.m in Sources */,
 				18F29F921D801AC900A609E3 /* main.m in Sources */,
 				486FB745221CEB1900690965 /* LzyNumberKeyBoardView.m in Sources */,
+				48604DFD24ED14B20088E419 /* LzyTextView.m in Sources */,
 				18ECA5D01D81411E002F1619 /* LzyCarIdKeyBoardView.m in Sources */,
+				48604DF324ED0C8C0088E419 /* ConstUtil.m in Sources */,
+				48604E0024ED14F20088E419 /* LzyInputView.m in Sources */,
+				48604DFA24ED13270088E419 /* ChatDemoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		18F29F991D801AC900A609E3 /* Main.storyboard */ = {
+		48604DE224ED0C600088E419 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				18F29F9A1D801AC900A609E3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		18F29F9E1D801AC900A609E3 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				18F29F9F1D801AC900A609E3 /* Base */,
+				48604DE324ED0C600088E419 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		48604DE424ED0C600088E419 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48604DE524ED0C600088E419 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -227,18 +325,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -271,18 +380,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -307,25 +427,35 @@
 		};
 		18F29FA51D801AC900A609E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FA925E7A81254FFE9C53C3D /* Pods-LzyKeyBoard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = LzyKeyBoard/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8AA3L66GJ6;
+				INFOPLIST_FILE = "$(SRCROOT)/LzyKeyBoard/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.findsoft.LzyKeyBoard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
 		18F29FA61D801AC900A609E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 417A6E5622C5392AF061E022 /* Pods-LzyKeyBoard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = LzyKeyBoard/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8AA3L66GJ6;
+				INFOPLIST_FILE = "$(SRCROOT)/LzyKeyBoard/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.findsoft.LzyKeyBoard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
