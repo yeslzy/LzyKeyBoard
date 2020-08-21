@@ -12,7 +12,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LzyInputView : UIView
 @property(nonatomic,copy)void(^SendTextBlock)(NSString*text);
-
 @end
 
 NS_ASSUME_NONNULL_END

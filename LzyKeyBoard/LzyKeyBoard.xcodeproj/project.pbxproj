@@ -12,12 +12,11 @@
 		18F29F921D801AC900A609E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F29F911D801AC900A609E3 /* main.m */; };
 		18F29F951D801AC900A609E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F29F941D801AC900A609E3 /* AppDelegate.m */; };
 		18F29F981D801AC900A609E3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F29F971D801AC900A609E3 /* ViewController.m */; };
-		48604DE724ED0C600088E419 /* keyboard@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48604DDB24ED0C600088E419 /* keyboard@3x.png */; };
-		48604DE824ED0C600088E419 /* keyboard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48604DDC24ED0C600088E419 /* keyboard@2x.png */; };
+		48601CA824EE1F1300381C3E /* LzyMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48601CA724EE1F1300381C3E /* LzyMessageCell.m */; };
+		48601CAB24EE213000381C3E /* LzyMessageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48601CAA24EE213000381C3E /* LzyMessageContentView.m */; };
+		48601CAE24EE4D1800381C3E /* LzyMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48601CAD24EE4D1800381C3E /* LzyMessageModel.m */; };
 		48604DE924ED0C600088E419 /* safeNum.gif in Resources */ = {isa = PBXBuildFile; fileRef = 48604DDD24ED0C600088E419 /* safeNum.gif */; };
 		48604DEA24ED0C600088E419 /* carNum.gif in Resources */ = {isa = PBXBuildFile; fileRef = 48604DDE24ED0C600088E419 /* carNum.gif */; };
-		48604DEB24ED0C600088E419 /* clear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48604DDF24ED0C600088E419 /* clear@2x.png */; };
-		48604DEC24ED0C600088E419 /* clear@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48604DE024ED0C600088E419 /* clear@3x.png */; };
 		48604DED24ED0C600088E419 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48604DE124ED0C600088E419 /* Assets.xcassets */; };
 		48604DEE24ED0C600088E419 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48604DE224ED0C600088E419 /* LaunchScreen.storyboard */; };
 		48604DEF24ED0C600088E419 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48604DE424ED0C600088E419 /* Main.storyboard */; };
@@ -39,12 +38,14 @@
 		18F29F961D801AC900A609E3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		18F29F971D801AC900A609E3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		417A6E5622C5392AF061E022 /* Pods-LzyKeyBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LzyKeyBoard.release.xcconfig"; path = "Target Support Files/Pods-LzyKeyBoard/Pods-LzyKeyBoard.release.xcconfig"; sourceTree = "<group>"; };
-		48604DDB24ED0C600088E419 /* keyboard@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard@3x.png"; sourceTree = "<group>"; };
-		48604DDC24ED0C600088E419 /* keyboard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard@2x.png"; sourceTree = "<group>"; };
+		48601CA624EE1F1300381C3E /* LzyMessageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LzyMessageCell.h; sourceTree = "<group>"; };
+		48601CA724EE1F1300381C3E /* LzyMessageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LzyMessageCell.m; sourceTree = "<group>"; };
+		48601CA924EE213000381C3E /* LzyMessageContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LzyMessageContentView.h; sourceTree = "<group>"; };
+		48601CAA24EE213000381C3E /* LzyMessageContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LzyMessageContentView.m; sourceTree = "<group>"; };
+		48601CAC24EE4D1800381C3E /* LzyMessageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LzyMessageModel.h; sourceTree = "<group>"; };
+		48601CAD24EE4D1800381C3E /* LzyMessageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LzyMessageModel.m; sourceTree = "<group>"; };
 		48604DDD24ED0C600088E419 /* safeNum.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = safeNum.gif; sourceTree = "<group>"; };
 		48604DDE24ED0C600088E419 /* carNum.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = carNum.gif; sourceTree = "<group>"; };
-		48604DDF24ED0C600088E419 /* clear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clear@2x.png"; sourceTree = "<group>"; };
-		48604DE024ED0C600088E419 /* clear@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clear@3x.png"; sourceTree = "<group>"; };
 		48604DE124ED0C600088E419 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48604DE324ED0C600088E419 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48604DE524ED0C600088E419 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -145,12 +146,8 @@
 		48604DDA24ED0C600088E419 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				48604DDB24ED0C600088E419 /* keyboard@3x.png */,
-				48604DDC24ED0C600088E419 /* keyboard@2x.png */,
 				48604DDD24ED0C600088E419 /* safeNum.gif */,
 				48604DDE24ED0C600088E419 /* carNum.gif */,
-				48604DDF24ED0C600088E419 /* clear@2x.png */,
-				48604DE024ED0C600088E419 /* clear@3x.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -162,6 +159,12 @@
 				48604DFC24ED14B20088E419 /* LzyTextView.m */,
 				48604DFE24ED14F20088E419 /* LzyInputView.h */,
 				48604DFF24ED14F20088E419 /* LzyInputView.m */,
+				48601CA624EE1F1300381C3E /* LzyMessageCell.h */,
+				48601CA724EE1F1300381C3E /* LzyMessageCell.m */,
+				48601CA924EE213000381C3E /* LzyMessageContentView.h */,
+				48601CAA24EE213000381C3E /* LzyMessageContentView.m */,
+				48601CAC24EE4D1800381C3E /* LzyMessageModel.h */,
+				48601CAD24EE4D1800381C3E /* LzyMessageModel.m */,
 			);
 			path = LzyChatView;
 			sourceTree = "<group>";
@@ -243,13 +246,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48604DEB24ED0C600088E419 /* clear@2x.png in Resources */,
 				48604DE924ED0C600088E419 /* safeNum.gif in Resources */,
-				48604DE724ED0C600088E419 /* keyboard@3x.png in Resources */,
-				48604DEC24ED0C600088E419 /* clear@3x.png in Resources */,
 				48604DEE24ED0C600088E419 /* LaunchScreen.storyboard in Resources */,
 				48604DEA24ED0C600088E419 /* carNum.gif in Resources */,
-				48604DE824ED0C600088E419 /* keyboard@2x.png in Resources */,
 				48604DEF24ED0C600088E419 /* Main.storyboard in Resources */,
 				48604DED24ED0C600088E419 /* Assets.xcassets in Resources */,
 			);
@@ -288,14 +287,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				18F29F981D801AC900A609E3 /* ViewController.m in Sources */,
+				48601CAE24EE4D1800381C3E /* LzyMessageModel.m in Sources */,
 				18F29F951D801AC900A609E3 /* AppDelegate.m in Sources */,
 				18F29F921D801AC900A609E3 /* main.m in Sources */,
+				48601CAB24EE213000381C3E /* LzyMessageContentView.m in Sources */,
 				486FB745221CEB1900690965 /* LzyNumberKeyBoardView.m in Sources */,
 				48604DFD24ED14B20088E419 /* LzyTextView.m in Sources */,
 				18ECA5D01D81411E002F1619 /* LzyCarIdKeyBoardView.m in Sources */,
 				48604DF324ED0C8C0088E419 /* ConstUtil.m in Sources */,
 				48604E0024ED14F20088E419 /* LzyInputView.m in Sources */,
 				48604DFA24ED13270088E419 /* ChatDemoViewController.m in Sources */,
+				48601CA824EE1F1300381C3E /* LzyMessageCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

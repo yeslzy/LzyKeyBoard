@@ -30,6 +30,8 @@
 #define NUMBER_ROW_HEIGHT 44
 #define LEFT_GAP 12
 #define GAP 15
+#define MSG_CELL_CONTENT_FONT  [UIFont systemFontOfSize:15]
+#define MSG_CELL_MAX_WIDTH  (VIEW_WIDTH-120)
 
 #define CHINESE_WORD_ARRAY  @[@"京",@"沪",@"浙",@"苏",@"粤",@"鲁",@"晋",@"冀",@"豫",@"川",@"渝",@"辽",@"吉",@"黑",@"皖",@"鄂",@"湘",@"赣",@"闽",@"陕",@"甘",@"宁",@"蒙",@"津",@"贵",@"云",@"桂",@"琼",@"青",@"新",@"藏"]
 #define NUMBERS_WORD_ARRAY @[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"0"]

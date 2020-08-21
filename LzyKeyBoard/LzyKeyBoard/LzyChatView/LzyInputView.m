@@ -12,14 +12,15 @@
 // 默认高度
 #define kBaseLineHeight  25
 #define kMaxHeight       80
-#define kOriginY VIEW_HEIGHT-MY_CELL_HEIGHT-SAFE_AREA_BOTTOM_HEIGHT-GAP
+#define kOriginY VIEW_HEIGHT-MY_CELL_HEIGHT-SAFE_AREA_BOTTOM_HEIGHT
 
 @interface LzyInputView ()<UITextViewDelegate>
 @property (nonatomic, assign) CGFloat currentTextH;
 @property (nonatomic, assign) CGFloat maxHeight;
 @property (nonatomic, strong) LzyTextView *textView;
 @property (nonatomic, strong) UIView *contentView;
-
+@property (nonatomic, strong) UIButton *voiceBtn;
+@property (nonatomic, strong) UIButton *plusBtn;
 
 @end
 
@@ -38,26 +39,16 @@
     return [self initWithFrame:CGRectMake(0,kOriginY , VIEW_WIDTH, MY_CELL_HEIGHT)];
 }
 - (void)initVars{
-    self.backgroundColor = [UIColor colorWithHexString:@"#DDDDDD"];
+    self.backgroundColor = [UIColor colorWithHexString:@"#EEEEEE"];
     self.maxHeight = kMaxHeight;
     self.currentTextH = kBaseLineHeight;
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(keyboardWillShow:)
-                                                 name:UIKeyboardWillShowNotification
-                                               object:nil];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(keyboardWillHide:)
-                                                 name:UIKeyboardWillHideNotification
-                                               object:nil];
-}
-- (void)dealloc{
-    [NSNotificationCenter.defaultCenter removeObserver:self];
 }
 - (void)setUpSubviews{
     [self addSubview:self.contentView];
+    [self addSubview:self.plusBtn];
+    [self addSubview:self.voiceBtn];
     [self.contentView addSubview:self.textView];
+    
     [self.contentView mas_makeConstraints:^(MASConstraintMaker*maker){
         maker.left.equalTo(self).offset(50);
         maker.top.equalTo(self).offset(7);
@@ -69,6 +60,15 @@
         maker.right.equalTo(self.contentView).offset(-10);
         maker.top.equalTo(self.contentView).offset(4);
         maker.bottom.equalTo(self.contentView).offset(-3);
+    }];
+    [self.voiceBtn mas_makeConstraints:^(MASConstraintMaker *maker){
+        maker.left.top.equalTo(self).offset(10);
+        maker.width.height.mas_equalTo(30);
+    }];
+    [self.plusBtn mas_makeConstraints:^(MASConstraintMaker *maker){
+        maker.top.equalTo(self).offset(10);
+        maker.right.equalTo(self).offset(-10);
+        maker.width.height.mas_equalTo(30);
     }];
 }
 #pragma mark   其他方法
@@ -100,42 +100,17 @@
 }
 
 - (void)sendText:(NSString*)text{
-    self.textView.text = nil;
-    self.height = MY_CELL_HEIGHT;
-    if (self.SendTextBlock) {
-        self.SendTextBlock(text);
+    text = [text stringByTrim];
+    text = [text stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+    if ([text isNotBlank]) {
+        self.textView.text = nil;
+        [self initVars];
+        if (self.SendTextBlock) {
+            self.SendTextBlock(text);
+        }
     }
 }
 #pragma mark  textView代理和监听
-- (void)keyboardWillShow:(NSNotification *)notification{
-   
-
-    CGRect rect = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
-    NSTimeInterval duration = [notification.userInfo[UIKeyboardAnimationDurationUserInfoKey] doubleValue];
-    [UIView beginAnimations:nil context:NULL];
-    [UIView setAnimationBeginsFromCurrentState:YES];
-    [UIView setAnimationDuration:duration];
-    [UIView setAnimationCurve:(UIViewAnimationCurve)[notification.userInfo[UIKeyboardAnimationCurveUserInfoKey] intValue]];
-
-    [self setOrigin:CGPointMake(self.origin.x, rect.origin.y - self.size.height)];
-    [UIView commitAnimations];
-}
-- (void)keyboardWillHide:(NSNotification *)notification{
-    NSTimeInterval duration = [notification.userInfo[UIKeyboardAnimationDurationUserInfoKey] doubleValue];
-
-    CGFloat yy = kOriginY;
-    if (self.currentTextH!=kBaseLineHeight) {
-        yy = VIEW_HEIGHT-self.height-GAP;
-    }
-    
-    
-    [UIView beginAnimations:nil context:NULL];
-    [UIView setAnimationBeginsFromCurrentState:YES];
-    [UIView setAnimationDuration:duration];
-    [UIView setAnimationCurve:(UIViewAnimationCurve)[notification.userInfo[UIKeyboardAnimationCurveUserInfoKey] intValue]];
-    [self setOrigin:CGPointMake(self.origin.x, yy)];
-    [UIView commitAnimations];
-}
 - (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text{
     
     NSMutableString *string = [textView.text mutableCopy];
@@ -149,8 +124,12 @@
         return  YES;
     }
 }
-
-
+- (void)showMoreAction{
+    
+}
+- (void)recordVoiceAction{
+    
+}
 #pragma mark lazy load
 - (UIView*)contentView{
     if (!_contentView) {
@@ -171,5 +150,21 @@
         _textView.textContainerInset = UIEdgeInsetsMake(4, 0,4, 0);
     }
     return _textView;
+}
+- (UIButton*)voiceBtn{
+    if (!_voiceBtn) {
+        _voiceBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_voiceBtn setImage:[UIImage imageNamed:@"voice"] forState:UIControlStateNormal];
+        [_voiceBtn addTarget:self action:@selector(recordVoiceAction) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _voiceBtn;
+}
+- (UIButton*)plusBtn{
+    if (!_plusBtn) {
+        _plusBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_plusBtn setImage:[UIImage imageNamed:@"add"] forState:UIControlStateNormal];
+        [_plusBtn addTarget:self action:@selector(showMoreAction) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _plusBtn;
 }
 @end
